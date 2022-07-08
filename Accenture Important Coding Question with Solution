@@ -1,0 +1,47 @@
+//input 8
+//(2,6 ),( 6,2 ) ,(4,4) (5,3), (3,5)
+//output - 4
+
+
+
+/*package whatever //do not write package name here */
+
+import java.io.*;
+import java.util.*;
+
+
+class dice {
+	public static void main (String[] args) {
+	    
+	    Scanner sc = new Scanner(System.in);
+	    
+	    int inp = sc.nextInt();
+	    
+	    
+	    int p = 0;
+	    
+
+  if(inp<2 || inp>12)
+	    {
+	    
+	   p = 0;
+	   
+	    }
+	    else{
+	        
+	        for(int e = 1 ; e < 6 ; e++){
+	            if(inp-e<=6 && inp-e>0)
+	            p++;
+	            
+	        }
+	    }
+	  System.out.println(p);
+	    
+	    
+	    
+	
+	}
+}
+
+
+
